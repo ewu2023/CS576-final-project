@@ -46,6 +46,12 @@ public class QuestionManager : MonoBehaviour {
 
         // Player has not submitted answer, so set flag to false
         submitted_answer = false;
+
+        // Initialize books
+        for (int i = 0; i < books.Count; i++) {
+            Book book = books[i];
+            book.player_transform = player.transform;
+        }
     }
 
     // Update is called once per frame
