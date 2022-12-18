@@ -6,12 +6,13 @@ public class door : MonoBehaviour
 {
     public GameObject player;
     // add public GameObjects for NPCs
-
+    public GameObject enemy;
+    public EnemyAI enemyScript;
     // Start is called before the first frame update
     void Start()
     {
         enemy = GameObject.Find("Enemy");
-        enemyScript = enemy.GetComponent<AIControl>();
+        enemyScript = enemy.GetComponent<EnemyAI>();
     }   
 
     // Update is called once per frame
@@ -22,7 +23,6 @@ public class door : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
         // Open door on collision
         if (other.gameObject == player || other.gameObject == enemy)
         {
