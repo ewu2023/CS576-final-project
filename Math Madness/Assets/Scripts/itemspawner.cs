@@ -10,12 +10,13 @@ public class ItemSpawner : MonoBehaviour
     public GameObject speed;
 
     // Internal
-    private List<GameObject> items = new List<GameObject>();
+    private List<GameObject> items;
     private bool[] itemspawned;
 
     // Start is called before the first frame update
     void Start()
     {
+        items = new List<GameObject>();
         items.Add(key);
         items.Add(slow);
         items.Add(speed);

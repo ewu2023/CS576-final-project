@@ -5,14 +5,14 @@ using UnityEngine;
 public class BookSpawn : MonoBehaviour
 {
     public GameObject book;
-    public int xradius;
-    public int zradius;
+    public float xradius;
+    public float zradius;
     // Start is called before the first frame update
     void Start()
     {
         GameObject book_to_spawn = Instantiate(book, this.transform) as GameObject;
-        int xrel_coord = Random.Range(-xradius, xradius);
-        int zrel_coord = Random.Range(-zradius, zradius);
+        float xrel_coord = Random.Range(-xradius, xradius);
+        float zrel_coord = Random.Range(-zradius, zradius);
         book_to_spawn.transform.localPosition = new Vector3(xrel_coord, 1.1f, zrel_coord);
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         for (int i = 0; i < players.Length; i++)
