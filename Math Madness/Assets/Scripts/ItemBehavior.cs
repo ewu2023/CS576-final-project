@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpinItem : MonoBehaviour
+public class ItemBehavior : MonoBehaviour
 {
     public float scale;
 
@@ -21,5 +21,14 @@ public class SpinItem : MonoBehaviour
                                scale + 0.2f * Mathf.Abs(Mathf.Sin(4.0f * Time.time))
                                );
         transform.Rotate(new Vector3(0.0f,20.0f,0.0f) * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "PlayerCapsule")
+        {
+            transform.parent.gameObject.GetComponent<ItemSpawner>().freeLocation();
+            Destroy(gameObject);
+        }
     }
 }
