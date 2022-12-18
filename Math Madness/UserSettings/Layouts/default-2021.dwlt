@@ -219,6 +219,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+=======
     width: 1224.8
     height: 722.8
   m_MinSize: {x: 200, y: 200}
@@ -381,7 +382,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/StarterAssets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\vicvi\Documents\GitHub\CS576-final-project\Math Madness
   m_LockTracker:
