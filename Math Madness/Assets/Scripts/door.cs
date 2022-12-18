@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class door : MonoBehaviour
 {
-    public GameObject player;
-    // add public GameObjects for NPCs
+    // GameObjects that can open door
+
+    // Sound
+    public AudioClip open_sound;
+    public AudioClip close_sound;
+    public AudioClip locksound;
+    public bool locked;
+    private AudioSource source;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        source = GetComponent<AudioSource>();
+        locked = false;
+        GameObject parent = transform.parent.gameObject;
+        if (parent.name.Contains("Closet") || parent.name.Contains("Main Office"))
+        {
+            locked = true;
+        }
     }
 
     // Update is called once per frame
@@ -22,8 +34,48 @@ public class door : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // Open door on collision
-        if (other.gameObject == player)
+        if (locked && other.gameObject.name == "PlayerCapsule")
         {
+            source.Stop();
+            source.PlayOneShot(locksound);
+        }
+        if (!locked && other.gameObject.name == "PlayerCapsule")
+        {
+            source.Stop();
+            source.PlayOneShot(open_sound);
+
+            if (name.Contains("Door L"))
+            {
+                transform.Rotate(0f, -90.0f, 0.0f, Space.World);
+            }
+            else if (name.Contains("Door R"))
+            {
+                transform.Rotate(0f, 90.0f, 0.0f, Space.World);
+            }
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (!locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            source.Stop();
+            source.PlayOneShot(locksound);
+            locked = true;
+            if (name.Contains("Door L"))
+            {
+                transform.Rotate(0f, 90.0f, 0.0f, Space.World);
+            }
+            else if (name.Contains("Door R"))
+            {
+                transform.Rotate(0f, -90.0f, 0.0f, Space.World);
+            }
+        }
+        if (locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            source.Stop();
+            source.PlayOneShot(locksound);
+            locked = false;
             if (name.Contains("Door L"))
             {
                 transform.Rotate(0f, -90.0f, 0.0f, Space.World);
@@ -38,8 +90,11 @@ public class door : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         // Open door on collision
-        if (other.gameObject == player)
+        if (!locked && other.gameObject.name == "PlayerCapsule")
         {
+            source.Stop();
+            source.PlayOneShot(close_sound);
+
             if (name.Contains("Door L"))
             {
                 transform.Rotate(0f, 90.0f, 0.0f, Space.World);
