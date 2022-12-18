@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class itemspawner : MonoBehaviour
+public class ItemSpawner : MonoBehaviour
 {
     // Items
     public GameObject key;
