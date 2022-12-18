@@ -23,7 +23,7 @@ public class PowerupUI : MonoBehaviour {
         if (seconds < 10) {
             timer_str += ":0" + seconds;
         } else {
-            timer_str += seconds;
+            timer_str += ":" + seconds;
         }
 
         timer_text.text = timer_str;
