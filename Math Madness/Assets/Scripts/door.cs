@@ -6,8 +6,7 @@ public class door : MonoBehaviour
 {
     public GameObject player;
     // add public GameObjects for NPCs
-    public GameObject enemy;
-    public AIControl enemyScript;
+
     // Start is called before the first frame update
     void Start()
     {
