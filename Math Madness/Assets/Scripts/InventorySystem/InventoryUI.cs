@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using StarterAssets;
 
 public class InventoryUI : MonoBehaviour {
     private bool inventory_open;
@@ -30,8 +31,16 @@ public class InventoryUI : MonoBehaviour {
 
         if (inventory_open) {
             Cursor.lockState = CursorLockMode.None;
+            inventory_ui.SetActive(true);
+
+            // Disable player movement
+            gameObject.GetComponent<FirstPersonController>().enabled = false;
         } else {
             Cursor.lockState = CursorLockMode.Locked;
+            inventory_ui.SetActive(false);
+
+            // Enable player movement
+            gameObject.GetComponent<FirstPersonController>().enabled = true;
         }
     }
 
