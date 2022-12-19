@@ -20,6 +20,9 @@ public class EnemyAI : MonoBehaviour
 
     private QuestionManager qm;
 
+    public AudioClip moveSound;
+    private AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,7 @@ public class EnemyAI : MonoBehaviour
         animation_controller.SetInteger("state", 0);
 
         qm = GameObject.Find("_GM").GetComponent<QuestionManager>();
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -89,6 +93,8 @@ public class EnemyAI : MonoBehaviour
             this.agent.SetDestination(target); 
             this.priority = 2;
 		}
+
+        source.PlayOneShot(moveSound, 0.05f);
         this.framesToMove = 10f;
 		this.timeToMove = 3.0f - 0.5f * (6 - qm.books.Count);
     }
