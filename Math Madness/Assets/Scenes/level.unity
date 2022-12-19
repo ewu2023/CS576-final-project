@@ -364,6 +364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'desk chair light '
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &26496275 stripped
@@ -574,6 +578,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk wite   shlelf  (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
 --- !u!4 &40372963 stripped
@@ -687,7 +699,15 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1366717117124123730, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366717117124123730, guid: 1911991733fc47546a86555c07c1150a, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843782303765796071, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4843782303765796071, guid: 1911991733fc47546a86555c07c1150a, type: 3}
@@ -695,7 +715,15 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4843782303769215507, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843782303769215507, guid: 1911991733fc47546a86555c07c1150a, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843782304057774928, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4843782304057774928, guid: 1911991733fc47546a86555c07c1150a, type: 3}
@@ -703,16 +731,32 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4843782304968740703, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843782304968740703, guid: 1911991733fc47546a86555c07c1150a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843782305035730734, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4843782305035730734, guid: 1911991733fc47546a86555c07c1150a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4843782305360292533, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843782305360292533, guid: 1911991733fc47546a86555c07c1150a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843782305564126421, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4843782305564126421, guid: 1911991733fc47546a86555c07c1150a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -767,16 +811,32 @@ PrefabInstance:
       value: Class (3)
       objectReference: {fileID: 0}
     - target: {fileID: 4843782305817568180, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843782305817568180, guid: 1911991733fc47546a86555c07c1150a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843782305877988319, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4843782305877988319, guid: 1911991733fc47546a86555c07c1150a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6653064635042139946, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653064635042139946, guid: 1911991733fc47546a86555c07c1150a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520949075843513261, guid: 1911991733fc47546a86555c07c1150a, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7520949075843513261, guid: 1911991733fc47546a86555c07c1150a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -925,6 +985,10 @@ PrefabInstance:
     - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
       propertyPath: m_Name
       value: desk chair light  (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
@@ -1382,6 +1446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e133709386866742ab37843520902b7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 2e133709386866742ab37843520902b7, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1671,6 +1739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: celing Light .001 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 129881762317555094, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2071606632906879150, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1732,6 +1804,10 @@ PrefabInstance:
     - target: {fileID: 674005732048780898, guid: 217f93372d74ad6498d77244791fbc7c, type: 3}
       propertyPath: m_Name
       value: art framed .005
+      objectReference: {fileID: 0}
+    - target: {fileID: 674005732048780898, guid: 217f93372d74ad6498d77244791fbc7c, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6742140644036458629, guid: 217f93372d74ad6498d77244791fbc7c, type: 3}
       propertyPath: m_RootOrder
@@ -2164,6 +2240,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk chair light  (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &157586715 stripped
@@ -2407,6 +2487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'desk chair light '
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &176053822 stripped
@@ -2580,6 +2664,14 @@ PrefabInstance:
     - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
       propertyPath: m_Name
       value: Desk wite   shlelf  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
@@ -2856,6 +2948,10 @@ PrefabInstance:
     - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
       propertyPath: m_Name
       value: 'desk chair light '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
@@ -3136,6 +3232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Desk wite  '
       objectReference: {fileID: 0}
+    - target: {fileID: 435710118984851061, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
 --- !u!4 &224172714 stripped
@@ -3231,6 +3331,10 @@ PrefabInstance:
     - target: {fileID: 7093538371682120713, guid: 93c86d3ef733e094bac922fe33cea5ac, type: 3}
       propertyPath: m_Name
       value: book.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093538371682120713, guid: 93c86d3ef733e094bac922fe33cea5ac, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7513619149834011604, guid: 93c86d3ef733e094bac922fe33cea5ac, type: 3}
       propertyPath: m_RootOrder
@@ -4162,6 +4266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: celing Light .001 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 129881762317555094, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2071606632906879150, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4275,6 +4383,10 @@ PrefabInstance:
     - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
       propertyPath: m_Name
       value: 'desk chair light '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
@@ -4863,6 +4975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'desk chair light '
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &354852653 stripped
@@ -4932,6 +5048,10 @@ PrefabInstance:
     - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
       propertyPath: m_Name
       value: 'desk chair light '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
@@ -5471,6 +5591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk wite   (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 435710118984851061, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
 --- !u!4 &416603376 stripped
@@ -5817,6 +5941,10 @@ PrefabInstance:
     - target: {fileID: 870676476672699341, guid: 036b5b153340fc44397b680dfa2d8709, type: 3}
       propertyPath: m_Name
       value: Stapler
+      objectReference: {fileID: 0}
+    - target: {fileID: 870676476672699341, guid: 036b5b153340fc44397b680dfa2d8709, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3231908047312976586, guid: 036b5b153340fc44397b680dfa2d8709, type: 3}
       propertyPath: m_RootOrder
@@ -6703,6 +6831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk chair light  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &552234484 stripped
@@ -6801,8 +6933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6e5c65272a20048ba7f2fdd953506c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  books:
-  - {fileID: 454216498}
+  books: []
   player: {fileID: 1715796514}
   interact_button: {fileID: 275795753}
   background: {fileID: 959832783}
@@ -7468,6 +7599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cement  pot big .001
       objectReference: {fileID: 0}
+    - target: {fileID: 1030168673781076776, guid: f9c3355fca44106429ccc1285a5e68d1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8468018163133872214, guid: f9c3355fca44106429ccc1285a5e68d1, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -7733,6 +7868,10 @@ PrefabInstance:
     - target: {fileID: 435710118984851061, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
       propertyPath: m_Name
       value: 'Desk wite  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 435710118984851061, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
@@ -8155,6 +8294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: shelf  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894804516205754606, guid: 9ee084a0032cac940b8eb40094106606, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8952702552585729593, guid: 9ee084a0032cac940b8eb40094106606, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -8376,6 +8519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'end table '
       objectReference: {fileID: 0}
+    - target: {fileID: 8566887088175388271, guid: 9f5c2462ef1632e4eb69911e11018f32, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5c2462ef1632e4eb69911e11018f32, type: 3}
 --- !u!4 &664853448 stripped
@@ -8393,6 +8540,10 @@ PrefabInstance:
     - target: {fileID: 129881762317555094, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
       propertyPath: m_Name
       value: celing Light .001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129881762317555094, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2071606632906879150, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
       propertyPath: m_RootOrder
@@ -8578,6 +8729,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk wite   shlelf  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
 --- !u!4 &677610138 stripped
@@ -8647,6 +8806,10 @@ PrefabInstance:
     - target: {fileID: 8417546174971867701, guid: 76ea472932f61b24fa5c0a6388dd77d9, type: 3}
       propertyPath: m_Name
       value: 'lobby desk A Light '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417546174971867701, guid: 76ea472932f61b24fa5c0a6388dd77d9, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76ea472932f61b24fa5c0a6388dd77d9, type: 3}
@@ -8946,6 +9109,10 @@ PrefabInstance:
     - target: {fileID: 435710118984851061, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
       propertyPath: m_Name
       value: Desk wite   (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 435710118984851061, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
@@ -9349,9 +9516,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3774468176048109390, guid: d31032f2b3b80b542882d6080dfdd4d1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5490711652950048126, guid: d31032f2b3b80b542882d6080dfdd4d1, type: 3}
       propertyPath: m_Name
       value: lap top  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490711652950048126, guid: d31032f2b3b80b542882d6080dfdd4d1, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d31032f2b3b80b542882d6080dfdd4d1, type: 3}
@@ -9492,6 +9667,10 @@ PrefabInstance:
     - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
       propertyPath: m_Name
       value: 'desk chair light '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
@@ -10150,6 +10329,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk wite   shlelf  (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
 --- !u!4 &785985783 stripped
@@ -10167,6 +10354,10 @@ PrefabInstance:
     - target: {fileID: 129881762317555094, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
       propertyPath: m_Name
       value: celing Light .001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129881762317555094, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2071606632906879150, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
       propertyPath: m_RootOrder
@@ -10693,6 +10884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stapler
       objectReference: {fileID: 0}
+    - target: {fileID: 870676476672699341, guid: 036b5b153340fc44397b680dfa2d8709, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3231908047312976586, guid: 036b5b153340fc44397b680dfa2d8709, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -11168,6 +11363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk wite   (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 435710118984851061, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
 --- !u!4 &856744857 stripped
@@ -11579,6 +11778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Desk wite  '
       objectReference: {fileID: 0}
+    - target: {fileID: 435710118984851061, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b09b74a69016b6a4096bcd3290bc0f84, type: 3}
 --- !u!4 &901071623 stripped
@@ -11785,6 +11988,10 @@ PrefabInstance:
     - target: {fileID: 5223877227900537759, guid: f463aa2c2cde9de4aa420c918d2c029a, type: 3}
       propertyPath: m_Name
       value: 'vase '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223877227900537759, guid: f463aa2c2cde9de4aa420c918d2c029a, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7482224855540332145, guid: f463aa2c2cde9de4aa420c918d2c029a, type: 3}
       propertyPath: m_RootOrder
@@ -12110,6 +12317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'desk chair light '
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &941379172 stripped
@@ -12434,6 +12645,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk wite   shlelf  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
 --- !u!4 &986801701 stripped
@@ -12573,6 +12792,10 @@ PrefabInstance:
     - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
       propertyPath: m_Name
       value: desk chair light  (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
@@ -14153,6 +14376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk chair light  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &1106017400 stripped
@@ -14317,6 +14544,10 @@ PrefabInstance:
     - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
       propertyPath: m_Name
       value: desk chair light  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
@@ -14484,6 +14715,10 @@ PrefabInstance:
     - target: {fileID: 5875261465392830554, guid: d2198717e5a80f04aa620db8fd04ff37, type: 3}
       propertyPath: m_Name
       value: book.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875261465392830554, guid: d2198717e5a80f04aa620db8fd04ff37, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6806659741881018518, guid: d2198717e5a80f04aa620db8fd04ff37, type: 3}
       propertyPath: m_RootOrder
@@ -15686,6 +15921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk chair light  (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &1224579406 stripped
@@ -15849,6 +16088,10 @@ PrefabInstance:
     - target: {fileID: 8566887088175388271, guid: 9f5c2462ef1632e4eb69911e11018f32, type: 3}
       propertyPath: m_Name
       value: 'end table '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566887088175388271, guid: 9f5c2462ef1632e4eb69911e11018f32, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5c2462ef1632e4eb69911e11018f32, type: 3}
@@ -16594,6 +16837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: shelf  (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894804516205754606, guid: 9ee084a0032cac940b8eb40094106606, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8952702552585729593, guid: 9ee084a0032cac940b8eb40094106606, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -16707,6 +16954,14 @@ PrefabInstance:
     - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
       propertyPath: m_Name
       value: Desk wite   shlelf  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
@@ -17062,6 +17317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk chair light  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &1327449726 stripped
@@ -17202,6 +17461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk chair light  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &1339924847 stripped
@@ -17268,9 +17531,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3774468176048109390, guid: d31032f2b3b80b542882d6080dfdd4d1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5490711652950048126, guid: d31032f2b3b80b542882d6080dfdd4d1, type: 3}
       propertyPath: m_Name
       value: 'lap top '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490711652950048126, guid: d31032f2b3b80b542882d6080dfdd4d1, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d31032f2b3b80b542882d6080dfdd4d1, type: 3}
@@ -17416,6 +17687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk chair light  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &1377715598 stripped
@@ -17485,6 +17760,14 @@ PrefabInstance:
     - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
       propertyPath: m_Name
       value: Desk wite   shlelf  (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
@@ -18206,6 +18489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'desk chair light '
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &1464815144 stripped
@@ -18707,6 +18994,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1010506092}
     m_Modifications:
+    - target: {fileID: 2172965580906695558, guid: 961fc08daceaf394c82ddb2a53571804, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3978406803631424046, guid: 961fc08daceaf394c82ddb2a53571804, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -18762,6 +19053,10 @@ PrefabInstance:
     - target: {fileID: 8428520130193808505, guid: 961fc08daceaf394c82ddb2a53571804, type: 3}
       propertyPath: m_Name
       value: 'pot plant  meum '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428520130193808505, guid: 961fc08daceaf394c82ddb2a53571804, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 961fc08daceaf394c82ddb2a53571804, type: 3}
@@ -19083,6 +19378,10 @@ PrefabInstance:
     - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
       propertyPath: m_Name
       value: desk chair light  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
@@ -19735,6 +20034,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk wite   shlelf  (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
 --- !u!4 &1600344382 stripped
@@ -20021,6 +20328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk chair light  (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &1624158361 stripped
@@ -20071,6 +20382,10 @@ PrefabInstance:
     - target: {fileID: 129881762317555094, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
       propertyPath: m_Name
       value: celing Light .001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129881762317555094, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2071606632906879150, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
       propertyPath: m_RootOrder
@@ -20867,6 +21182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'shelf '
       objectReference: {fileID: 0}
+    - target: {fileID: 3894804516205754606, guid: 9ee084a0032cac940b8eb40094106606, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8952702552585729593, guid: 9ee084a0032cac940b8eb40094106606, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -20980,6 +21299,14 @@ PrefabInstance:
     - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
       propertyPath: m_Name
       value: Desk wite   shlelf  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
@@ -21112,6 +21439,10 @@ PrefabInstance:
     - target: {fileID: 2051405655965441423, guid: 72bbb440ae026914587dff2819777e4f, type: 3}
       propertyPath: m_Name
       value: 'snake pant '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2051405655965441423, guid: 72bbb440ae026914587dff2819777e4f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72bbb440ae026914587dff2819777e4f, type: 3}
@@ -21334,6 +21665,10 @@ PrefabInstance:
     - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
       propertyPath: m_Name
       value: 'desk chair light '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
@@ -21695,6 +22030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk chair light  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &1774375814 stripped
@@ -21852,6 +22191,10 @@ PrefabInstance:
     - target: {fileID: 129881762317555094, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
       propertyPath: m_Name
       value: celing Light .001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129881762317555094, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2071606632906879150, guid: f7c570dc8db5280488370d3a4c09e413, type: 3}
       propertyPath: m_RootOrder
@@ -22908,6 +23251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk chair light  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
 --- !u!4 &1836909795 stripped
@@ -23231,6 +23578,14 @@ PrefabInstance:
     - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
       propertyPath: m_Name
       value: Desk wite   shlelf  (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
@@ -23574,6 +23929,14 @@ PrefabInstance:
     - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
       propertyPath: m_Name
       value: Desk wite   shlelf  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
@@ -23938,6 +24301,14 @@ PrefabInstance:
     - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
       propertyPath: m_Name
       value: Desk wite   shlelf  (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231127974572986528, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661754864874109692, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e5c8876fd3eda4693314cd92732455, type: 3}
@@ -24565,7 +24936,15 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3831155800055994507, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831155800055994507, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831155800419114219, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3831155800419114219, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
@@ -24573,7 +24952,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5729341008511355993, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729341008511355993, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729341009008233756, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5729341009008233756, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
@@ -24581,11 +24968,23 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270463786263701091, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463786263701091, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7270463786622409567, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463786622409567, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463786653528498, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270463786653528498, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
@@ -24593,7 +24992,15 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7270463786772940406, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463786772940406, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463786904070482, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270463786904070482, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
@@ -24601,8 +25008,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270463786948016115, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463786948016115, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463787095828413, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270463787095828413, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24611,6 +25026,10 @@ PrefabInstance:
     - target: {fileID: 7270463787485144691, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_Name
       value: Bigger Class
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463787485144691, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270463787485144691, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24661,7 +25080,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270463787602047052, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463787602047052, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463787766508219, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270463787766508219, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
@@ -24669,7 +25096,15 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7270463788101066771, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463788101066771, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463788220177894, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270463788220177894, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
@@ -24677,12 +25112,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270463788243173883, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270463788243173883, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8901678116786358793, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8901678116786358793, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 8901678117307813564, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8901678117307813564, guid: 18b3d9f0c23932746818fbd1033d65f5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25280,6 +25727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book.006
       objectReference: {fileID: 0}
+    - target: {fileID: 9100542787268894237, guid: 24259047591d1b64e98b6e9208f1c9ad, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24259047591d1b64e98b6e9208f1c9ad, type: 3}
 --- !u!4 &2003595553 stripped
@@ -25760,6 +26211,10 @@ PrefabInstance:
     - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
       propertyPath: m_Name
       value: desk chair light  (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510128748811087622, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}

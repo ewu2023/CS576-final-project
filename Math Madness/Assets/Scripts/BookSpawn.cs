@@ -7,6 +7,8 @@ public class BookSpawn : MonoBehaviour
     public GameObject book;
     public float xradius;
     public float zradius;
+
+    private QuestionManager qm;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,12 @@ public class BookSpawn : MonoBehaviour
                 book_to_spawn.GetComponent<Book>().player_transform = players[i].transform;
             }
         }
+
+        //Inserts the newly created books into tthe list
+        qm = GameObject.Find("_GM").GetComponent<QuestionManager>();
+        qm.books.Add(book_to_spawn.GetComponent<Book>());
+
+
     }
 
     // Update is called once per frame

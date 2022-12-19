@@ -14,6 +14,7 @@ public class Book : MonoBehaviour {
 
     void Start() {
         near_book = false;
+        player_transform = GameObject.Find("PlayerCapsule").transform;
     }
 
     void Update() {

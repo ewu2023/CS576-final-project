@@ -18,6 +18,8 @@ public class EnemyAI : MonoBehaviour
     public Transform[] books;
     private Animator animation_controller;
 
+    private QuestionManager qm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,8 @@ public class EnemyAI : MonoBehaviour
 
         animation_controller = GetComponent<Animator>();
         animation_controller.SetInteger("state", 0);
+
+        qm = GameObject.Find("_GM").GetComponent<QuestionManager>();
     }
 
     // Update is called once per frame
@@ -88,7 +92,7 @@ public class EnemyAI : MonoBehaviour
             this.priority = 2;
 		}
         this.framesToMove = 10f;
-		this.timeToMove = 1.0f;
+		this.timeToMove = 3.0f - 0.5f * (6 - qm.books.Count);
     }
 
     public void Pinged(Vector3 pingLocation)
@@ -98,6 +102,15 @@ public class EnemyAI : MonoBehaviour
             this.target = pingLocation;
             this.agent.SetDestination(target);
 			this.priority = 1;
+        }
+    }
+
+     void OnTriggerEnter(Collider other)
+    {
+        // If ever collides with Player, game ver
+        if (other.gameObject.name == "PlayerCapsule")
+        {
+            //Game Over
         }
     }
    
