@@ -94,7 +94,6 @@ GameObject:
   - component: {fileID: 4660486867083935661}
   - component: {fileID: 4660486867083935660}
   - component: {fileID: 4660486867083935662}
-  - component: {fileID: 4667835337933759699}
   m_Layer: 0
   m_Name: SlowPowerup
   m_TagString: Untagged
@@ -146,16 +145,3 @@ MonoBehaviour:
   duration: 10
   time_scale: 0.2
   powerup_name: Slow
---- !u!114 &4667835337933759699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4660486867083935658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5e93d01c01998641b23042f5ba7d149, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scale: 1

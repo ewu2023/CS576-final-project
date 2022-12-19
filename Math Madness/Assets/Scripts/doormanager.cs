@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // THIS SCRIPT IT NOT BEING USED, SAVING JUST IN CASE
-public class DoorManager : MonoBehaviour
+public class doormanager : MonoBehaviour
 {
     private List<GameObject> interactable_doors = new List<GameObject>();
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class DoorManager : MonoBehaviour
                 if (parent.name.Contains("Closet") || parent.name.Contains("Main Office"))
                 {
                     Debug.Log(parent.name);
-                    gameObjects[i].GetComponent<Door>().locked = true;
+                    gameObjects[i].GetComponent<door>().locked = true;
                 }
             }
         }
