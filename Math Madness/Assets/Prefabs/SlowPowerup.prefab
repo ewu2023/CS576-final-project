@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4660486867083935661}
   - component: {fileID: 4660486867083935660}
-  - component: {fileID: 4660486867083935662}
   - component: {fileID: -7188984697365306406}
+  - component: {fileID: 2907670091887218929}
   m_Layer: 0
   m_Name: SlowPowerup
   m_TagString: Untagged
@@ -49,21 +49,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4660486867083935662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4660486867083935658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28e6f0af7bf4194469539e2ddec8e70c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 10
-  time_scale: 0.2
-  powerup_name: Slow
 --- !u!114 &-7188984697365306406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,6 +62,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scale: 1
+--- !u!114 &2907670091887218929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4660486867083935658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd058f12386d3014cbe64219fada19cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  consumable: {fileID: 11400000, guid: b637c737fb6484b47b2ce7b8c45749ce, type: 2}
 --- !u!1001 &655897899534705636
 PrefabInstance:
   m_ObjectHideFlags: 0

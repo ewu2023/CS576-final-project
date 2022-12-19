@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073747a310c1745429b7a497ea1aacee, type: 3}
-  m_Name: Speed
+  m_Script: {fileID: 11500000, guid: 28e6f0af7bf4194469539e2ddec8e70c, type: 3}
+  m_Name: Slow
   m_EditorClassIdentifier: 
-  name: Speed
-  description: Zoooom
-  icon: {fileID: 21300000, guid: e8fa2b8699275d04e87bb96ca6fe6c85, type: 3}
-  duration: 10
-  speedFactor: 2
+  name: New Consumable
+  description: 
+  icon: {fileID: 0}
+  time_scale: 0
+  duration: 0
