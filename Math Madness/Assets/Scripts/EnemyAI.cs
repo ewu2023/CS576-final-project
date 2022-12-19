@@ -16,6 +16,7 @@ public class EnemyAI : MonoBehaviour
     private float framesToMove;
 
     public Transform[] books;
+    private Animator animation_controller;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,9 @@ public class EnemyAI : MonoBehaviour
         this.timeToMove = 2.0f;
         this.target = books[Random.Range(0, books.Length)].position;
         this.agent.SetDestination(target); 
+
+        animation_controller = GetComponent<Animator>();
+        animation_controller.SetInteger("state", 0);
     }
 
     // Update is called once per frame
@@ -45,24 +49,30 @@ public class EnemyAI : MonoBehaviour
 	{
 		if (framesToMove > 0f) 
 		{
+            animation_controller.SetInteger("state", 1);
 			framesToMove -= 1f;
 			this.agent.speed = speed;
 		}
 		else
 		{
 			this.agent.speed = 0f;
+            animation_controller.SetInteger("state", 0);
 		}
 
-		Vector3 direction = this.player.position - this.transform.position; 
+		Vector3 direction = this.player.position - (this.transform.position + Vector3.up * 2.0f); 
 		RaycastHit raycastHit;
-		if (Physics.Raycast(this.transform.position, direction, out raycastHit, float.PositiveInfinity) & raycastHit.transform.tag == "Player")
+		if (Physics.Raycast(this.transform.position + Vector3.up * 2.0f, direction, out raycastHit, float.PositiveInfinity) & raycastHit.transform.tag == "Player")
 		{
             this.target = this.player.position;
 			this.agent.SetDestination(target); 
 		    this.priority = 0;
+            Debug.DrawRay(transform.position + Vector3.up * 2.0f, direction, Color.green);
+            Debug.Log(raycastHit.transform);
 		}
 		else
 		{
+            Debug.DrawRay(transform.position + Vector3.up * 2.0f, direction, Color.red);
+            Debug.Log(raycastHit.transform);
 			this.priority = 1;
 		}
 	}
@@ -78,7 +88,7 @@ public class EnemyAI : MonoBehaviour
             this.priority = 2;
 		}
         this.framesToMove = 10f;
-		this.timeToMove = 3.0f;
+		this.timeToMove = 1.0f;
     }
 
     public void Pinged(Vector3 pingLocation)
