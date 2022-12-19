@@ -69,7 +69,7 @@ public class Door : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         // Lock Door (only hallway)
-        if (!locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.Alpha1) && transform.parent.name.Contains("hallway door"))
+        if (!locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.E) && transform.parent.name.Contains("hallway door"))
         {
             source.Stop();
             source.PlayOneShot(locksound);
@@ -84,7 +84,7 @@ public class Door : MonoBehaviour
             }
         }
         // Unlock Door (any locked door)
-        if (locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.Alpha2))
+        else if (locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.E))
         {
             source.Stop();
             source.PlayOneShot(locksound);
