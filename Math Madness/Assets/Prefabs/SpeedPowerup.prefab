@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5481071145974382997}
   - component: {fileID: 5481071145974382998}
-  - component: {fileID: 5481071145974382999}
   - component: {fileID: 4402485030799185338}
   m_Layer: 0
   m_Name: SpeedPowerup
@@ -48,22 +47,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5481071145974382999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5481071145974382996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073747a310c1745429b7a497ea1aacee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 10
-  time_scale: 1
-  powerup_name: Speed
-  SpeedFactor: 2
 --- !u!114 &4402485030799185338
 MonoBehaviour:
   m_ObjectHideFlags: 0
