@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class itemspawner : MonoBehaviour
+public class ItemSpawner : MonoBehaviour
 {
     // Items
     public GameObject key;
@@ -10,37 +10,28 @@ public class itemspawner : MonoBehaviour
     public GameObject speed;
 
     // Internal
-    private List<GameObject> items = new List<GameObject>();
-    private bool[] itemspawned;
+    private List<GameObject> items;
+    private int location_num;
 
     // Start is called before the first frame update
     void Start()
     {
+        items = new List<GameObject>();
         items.Add(key);
         items.Add(slow);
         items.Add(speed);
 
-        itemspawned = new bool[transform.childCount];
-        for (int i = 0; i < itemspawned.Length; i++)
-        {
-            itemspawned[i] = false;
-        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SpawnItem(int location)
     {
-        SpawnItem();
+        location_num = location;
+        GameObject item = Instantiate(items[Random.Range(0, items.Count)], this.transform) as GameObject;
+        item.transform.position = transform.position;
     }
 
-    public void SpawnItem()
+    public void freeLocation()
     {
-        int location = Random.Range(0, transform.childCount);
-        if (!itemspawned[location])
-        {
-            itemspawned[location] = true;
-            GameObject item = Instantiate(items[Random.Range(0, items.Count)]) as GameObject;
-            item.transform.position = transform.GetChild(location).position;
-        }
+        transform.parent.gameObject.GetComponent<ItemManager>().freeLocation(location_num);
     }
 }
