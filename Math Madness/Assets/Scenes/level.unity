@@ -1907,7 +1907,7 @@ MonoBehaviour:
   priority: 0
   target: {x: 0, y: 0, z: 0}
   books:
-  - {fileID: 0}
+  - {fileID: 454216499}
 --- !u!54 &391431467
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2494,7 +2494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   books:
-  - {fileID: 0}
+  - {fileID: 454216498}
   player: {fileID: 1715796514}
   interact_button: {fileID: 275795753}
   background: {fileID: 959832783}
