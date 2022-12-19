@@ -13,9 +13,15 @@ public class Door : MonoBehaviour
     public bool locked;
     private AudioSource source;
 
+    public GameObject enemy;
+    public EnemyAI enemyScript;
+
     // Start is called before the first frame update
     void Start()
     {
+        enemy = GameObject.Find("Enemy");
+        enemyScript = enemy.GetComponent<EnemyAI>();
+
         source = GetComponent<AudioSource>();
         locked = false;
         GameObject parent = transform.parent.gameObject;
@@ -39,7 +45,7 @@ public class Door : MonoBehaviour
             source.Stop();
             source.PlayOneShot(locksound);
         }
-        if (!locked && other.gameObject.name == "PlayerCapsule")
+        if (!locked && other.gameObject.name == "PlayerCapsule" || other.gameObject == enemy)
         {
             source.Stop();
             source.PlayOneShot(open_sound);
@@ -51,6 +57,11 @@ public class Door : MonoBehaviour
             else if (name.Contains("Door R"))
             {
                 transform.Rotate(0f, 90.0f, 0.0f, Space.World);
+            }
+
+            if(other.gameObject.name == "PlayerCapsule")
+            {
+                enemyScript.Pinged(transform.position);
             }
         }
     }
@@ -90,7 +101,7 @@ public class Door : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         // Open door on collision
-        if (!locked && other.gameObject.name == "PlayerCapsule")
+        if (!locked && other.gameObject.name == "PlayerCapsule" || other.gameObject == enemy)
         {
             source.Stop();
             source.PlayOneShot(close_sound);
