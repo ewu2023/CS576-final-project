@@ -14469,6 +14469,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1207592545944973033, guid: 3e00f8cdb03d73e40a88bcb18c0d481f, type: 3}
   m_PrefabInstance: {fileID: 1119507095}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1123126979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8868222895960765676, guid: ca6c987c117ade948b044e823d3033ec, type: 3}
+  m_PrefabInstance: {fileID: 1589216306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1140506768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20764,6 +20769,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer_text: {fileID: 210860981}
   powerup_name: 
+--- !u!114 &1715796516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715796514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e7c6883c3cc4f4a8991c4621caf981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory_ui: {fileID: 1123126979}
+--- !u!114 &1715796517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715796514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a62ee692f30bc4aaf5af6de29c58c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: []
+  capacity: 3
 --- !u!1 &1715869208
 GameObject:
   m_ObjectHideFlags: 0
