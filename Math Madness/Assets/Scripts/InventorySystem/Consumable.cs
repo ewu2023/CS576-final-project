@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using StarterAssets;
 
 [CreateAssetMenu(fileName="New Consumable", menuName="Inventory/Consumable")]
 public class Consumable : ScriptableObject {

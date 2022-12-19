@@ -18,6 +18,10 @@ public class PowerupUI : MonoBehaviour {
         timer_text.gameObject.SetActive(false);
     }
 
+    public void StartTimer(IEnumerator tick_function) {
+        StartCoroutine(tick_function);
+    }
+
     public void UpdateTimer(int minutes, int seconds) {
         string timer_str = powerup_name + " " + "" + minutes;
         if (seconds < 10) {
