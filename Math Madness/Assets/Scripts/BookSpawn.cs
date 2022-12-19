@@ -13,7 +13,7 @@ public class BookSpawn : MonoBehaviour
         GameObject book_to_spawn = Instantiate(book, this.transform) as GameObject;
         float xrel_coord = Random.Range(-xradius, xradius);
         float zrel_coord = Random.Range(-zradius, zradius);
-        book_to_spawn.transform.localPosition = new Vector3(xrel_coord, 1.1f, zrel_coord);
+        book_to_spawn.transform.localPosition = new Vector3(xrel_coord, 0.8f, zrel_coord);
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         for (int i = 0; i < players.Length; i++)
         {
