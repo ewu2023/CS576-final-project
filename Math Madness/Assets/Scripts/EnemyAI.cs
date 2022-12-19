@@ -71,12 +71,10 @@ public class EnemyAI : MonoBehaviour
 			this.agent.SetDestination(target); 
 		    this.priority = 0;
             Debug.DrawRay(transform.position + Vector3.up * 2.0f, direction, Color.green);
-            Debug.Log(raycastHit.transform);
 		}
 		else
 		{
             Debug.DrawRay(transform.position + Vector3.up * 2.0f, direction, Color.red);
-            Debug.Log(raycastHit.transform);
 			this.priority = 1;
 		}
 	}
