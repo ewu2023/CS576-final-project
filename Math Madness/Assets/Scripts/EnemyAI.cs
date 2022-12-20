@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -115,6 +116,9 @@ public class EnemyAI : MonoBehaviour
         if (other.gameObject.name == "PlayerCapsule")
         {
             //Game Over
+            Debug.Log("You Lost!");
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("end_lose");
         }
     }
    
