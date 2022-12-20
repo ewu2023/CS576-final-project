@@ -46,4 +46,14 @@ public class PlayerInventory : MonoBehaviour {
             onItemChangedCallback.Invoke();
         }
     }
+
+    public Consumable GetKey() {
+        for (int i = 0; i < inventory.Count; i++) {
+            Consumable cur_item = inventory[i];
+            if (cur_item.name == "Key") {
+                return cur_item;
+            }
+        }
+        return null;
+    }
 }

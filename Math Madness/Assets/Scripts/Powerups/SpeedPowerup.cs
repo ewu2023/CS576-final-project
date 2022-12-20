@@ -29,8 +29,6 @@ public class SpeedPowerup : Consumable {
         fps_controller.MoveSpeed *= speedFactor;
         fps_controller.SprintSpeed *= speedFactor;
 
-        player_UI.timer_started = true;
-
         while (cur_time <= duration) {
             // Calculate how much time remains for the powerup
             float time_remaining = duration - cur_time;
