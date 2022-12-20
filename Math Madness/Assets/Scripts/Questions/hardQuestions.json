@@ -1,0 +1,42 @@
+[
+    {
+        "questionStr": "(3 + 4) * 7 = ?",
+        "answer": 49
+    },
+    {
+        "questionStr": "2 + (5 + 12) = ?",
+        "answer": 19
+    },
+    {
+        "questionStr": "10 - 4 / 2 = ?",
+        "answer": 8
+    },
+    {
+        "questionStr": "5 * 10 / 5 = ?",
+        "answer": 5
+    },
+    {
+        "questionStr": "0 * (5 + 40) / 9 = ?",
+        "answer": 2
+    },
+    {
+        "questionStr": "18 / (2 * 9) + 1 = ?",
+        "answer": 2
+    },
+    {
+        "questionStr": "(72 + 28) / 10 = ?",
+        "answer": 10
+    },
+    {
+        "questionStr": "8 * 4 + 9 - 9 + 18 = ?",
+        "answer": 50
+    },
+    {
+        "questionStr": "10 * 12 - 14 / 2 + 15 = ?",
+        "answer": 128
+    }, 
+    {
+        "questionStr": "12 / [(6 * 10) / 5] = ?",
+        "answer": 1
+    }
+]
