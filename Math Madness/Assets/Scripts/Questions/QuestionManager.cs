@@ -22,7 +22,7 @@ public class QuestionManager : MonoBehaviour {
     private int num_correct_answers;
 
     // Number of questions needed to win
-    private int total_needed;
+    public int total_needed;
 
     // Get reference to player
     public GameObject player;
@@ -35,6 +35,8 @@ public class QuestionManager : MonoBehaviour {
 
     public Text try_again_text;
     public InputField player_input;
+
+    public Text book_counter;
     private bool submitted_answer;
     private string player_answer;
 
@@ -45,7 +47,6 @@ public class QuestionManager : MonoBehaviour {
 
     void Start() {
         Cursor.lockState = CursorLockMode.Locked;
-        total_needed = 6;
         cur_player_state = PlayerState.ROAMING;
         
         // Disable UI elements
@@ -63,6 +64,8 @@ public class QuestionManager : MonoBehaviour {
             Book book = books[i];
             book.player_transform = player.transform;
         }
+
+        book_counter.text = "Books: " + "0/" + total_needed;  
     }
 
 
@@ -199,6 +202,7 @@ public class QuestionManager : MonoBehaviour {
             
             if (n == book.answer) {
                 num_correct_answers++;
+                book_counter.text = "Books: " + num_correct_answers + "/" + total_needed;
                 return true;
             }
 

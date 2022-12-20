@@ -33,9 +33,15 @@ public class BookManager : MonoBehaviour
 
     public int numBooks;
     private bool[] location_has_book;
+
+    private QuestionManager qm;
+
     // Start is called before the first frame update
     void Start()
     {
+        qm = GameObject.Find("_GM").GetComponent<QuestionManager>();
+        qm.total_needed = numBooks;
+
         location_has_book = new bool[transform.childCount];
         for (int i = 0; i < location_has_book.Length; i++)
         {
