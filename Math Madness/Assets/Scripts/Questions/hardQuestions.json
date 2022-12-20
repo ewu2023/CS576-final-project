@@ -14,7 +14,7 @@
         },
         {
             "questionStr": "5 * 10 / 5 = ?",
-            "answer": 5
+            "answer": 10
         },
         {
             "questionStr": "0 * (5 + 40) / 9 = ?",

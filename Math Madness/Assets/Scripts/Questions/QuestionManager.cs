@@ -40,6 +40,8 @@ public class QuestionManager : MonoBehaviour {
     private bool submitted_answer;
     private string player_answer;
 
+    private InventoryUI player_inventory;
+
     // Keep track of player state
     private PlayerState cur_player_state;
 
@@ -55,6 +57,9 @@ public class QuestionManager : MonoBehaviour {
         prompt.gameObject.SetActive(false);
         player_input.gameObject.SetActive(false);
         try_again_text.gameObject.SetActive(false);
+
+        // Get reference to inventory UI script
+        player_inventory = player.GetComponent<InventoryUI>();
 
         // Player has not submitted answer, so set flag to false
         submitted_answer = false;
@@ -109,6 +114,7 @@ public class QuestionManager : MonoBehaviour {
                     
                     // Disable player controls
                     player.GetComponent<FirstPersonController>().enabled = false;
+                    player_inventory.enabled = false;
 
                     Cursor.lockState = CursorLockMode.None;
 
@@ -148,6 +154,7 @@ public class QuestionManager : MonoBehaviour {
                     // Make player active again
                     player.GetComponent<FirstPersonController>().enabled = true;
                     Cursor.lockState = CursorLockMode.Locked;
+                    player_inventory.enabled = true;
                 } else {
                     try_again_text.gameObject.SetActive(true);
                     player_input.text = "";
