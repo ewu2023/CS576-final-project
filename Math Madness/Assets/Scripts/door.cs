@@ -105,13 +105,13 @@ public class Door : MonoBehaviour
             nav.enabled = false;
             Open();
             // Unlock other hallway door
-            if (name.Contains("Door L"))
+            if (transform.parent.name.Contains("hallway door") && name.Contains("Door L"))
             {
                 GameObject otherdoor = transform.parent.Find("Door R").gameObject;
                 otherdoor.GetComponent<Door>().Open();
                 otherdoor.GetComponent<Door>().locked = false;
             }
-            else if (name.Contains("Door R"))
+            else if (transform.parent.name.Contains("hallway door") && name.Contains("Door R"))
             {
                 GameObject otherdoor = transform.parent.Find("Door L").gameObject;
                 otherdoor.GetComponent<Door>().Open();
