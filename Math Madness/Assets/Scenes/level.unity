@@ -21854,8 +21854,7 @@ MonoBehaviour:
   - {fileID: 906538212}
   - {fileID: 806139986}
   - {fileID: 1081217410}
-  moveSound: {fileID: 0}
-  spotted: {fileID: 0}
+  moveSound: {fileID: 8300000, guid: 4625dceb11856254aa9f6c1c100943bc, type: 3}
 --- !u!65 &1769099984
 BoxCollider:
   m_ObjectHideFlags: 0
