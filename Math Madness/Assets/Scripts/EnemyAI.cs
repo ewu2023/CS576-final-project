@@ -67,18 +67,18 @@ public class EnemyAI : MonoBehaviour
             animation_controller.SetInteger("state", 0);
 		}
 
-		Vector3 direction = this.player.position - (this.transform.position + Vector3.up * 2.0f); 
+		Vector3 direction = (this.player.position + Vector3.up * 1.0f) - (this.transform.position + Vector3.up * 3.0f); 
 		RaycastHit raycastHit;
-		if (Physics.Raycast(this.transform.position + Vector3.up * 2.0f, direction, out raycastHit, float.PositiveInfinity) & raycastHit.transform.tag == "Player")
+		if (Physics.Raycast(this.transform.position + Vector3.up * 2.5f, direction, out raycastHit, float.PositiveInfinity) & raycastHit.transform.tag == "Player")
 		{
             this.target = this.player.position;
 			this.agent.SetDestination(target); 
 		    this.priority = 0;
-            Debug.DrawRay(transform.position + Vector3.up * 2.0f, direction, Color.green);
+            Debug.DrawRay(transform.position + Vector3.up * 2.5f, direction, Color.green);
 		}
 		else
 		{
-            Debug.DrawRay(transform.position + Vector3.up * 2.0f, direction, Color.red);
+            Debug.DrawRay(transform.position + Vector3.up * 2.5f, direction, Color.red);
 			this.priority = 1;
 		}
 	}
