@@ -65,7 +65,7 @@ public class QuestionManager : MonoBehaviour {
             book.player_transform = player.transform;
         }
 
-        book_counter.text = "Books: " + "0/" + total_needed;  
+        book_counter.text = "Books: " + "0/" + 6;  
     }
 
 
