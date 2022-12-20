@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Key
   description: Unlocks 1 door
-  icon: {fileID: 21300000, guid: d7094718bdac022428dd29244922d06b, type: 3}
+  icon: {fileID: 21300000, guid: 9a2a4da9a72996749bfe3f1f63abe2c6, type: 3}

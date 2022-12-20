@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuestionManager : MonoBehaviour {
     // Possible states player could be in
@@ -20,7 +21,7 @@ public class QuestionManager : MonoBehaviour {
     private int num_correct_answers;
 
     // Number of questions needed to win
-    public int total_needed;
+    private int total_needed;
 
     // Get reference to player
     public GameObject player;
@@ -42,6 +43,8 @@ public class QuestionManager : MonoBehaviour {
     private int cur_book = -1;
 
     void Start() {
+        Cursor.lockState = CursorLockMode.Locked;
+        total_needed = 6;
         cur_player_state = PlayerState.ROAMING;
         
         // Disable UI elements
@@ -60,6 +63,7 @@ public class QuestionManager : MonoBehaviour {
             book.player_transform = player.transform;
         }
     }
+
 
     // Update is called once per frame
     void Update() {
@@ -152,7 +156,8 @@ public class QuestionManager : MonoBehaviour {
 
         case PlayerState.WIN:
             Debug.Log("You Win!");
-            // End the game here
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("end_win");
             return;
         
         default:

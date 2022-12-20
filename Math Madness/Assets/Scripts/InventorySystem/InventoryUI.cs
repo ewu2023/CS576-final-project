@@ -25,22 +25,15 @@ public class InventoryUI : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.I)) {
-            inventory_open = !inventory_open;
-        }
-
-        if (inventory_open) {
-            Cursor.lockState = CursorLockMode.None;
-            inventory_ui.SetActive(true);
-
-            // Disable player movement
-            gameObject.GetComponent<FirstPersonController>().enabled = false;
-        } else {
-            Cursor.lockState = CursorLockMode.Locked;
-            inventory_ui.SetActive(false);
-
-            // Enable player movement
-            gameObject.GetComponent<FirstPersonController>().enabled = true;
+        if (Input.GetKeyDown(KeyCode.Alpha1)) {
+            Debug.Log("Pressed slot 0");
+            slots[0].Use();
+        } else if (Input.GetKeyDown(KeyCode.Alpha2)) {
+            Debug.Log("Pressed slot 1");
+            slots[1].Use();
+        } else if (Input.GetKeyDown(KeyCode.Alpha3)) {
+            Debug.Log("Pressed slot 2");
+            slots[2].Use();
         }
     }
 

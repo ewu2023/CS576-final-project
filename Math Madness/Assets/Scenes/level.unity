@@ -6885,6 +6885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   books: []
+  total_needed: 1
   player: {fileID: 1715796514}
   interact_button: {fileID: 275795753}
   background: {fileID: 959832783}
