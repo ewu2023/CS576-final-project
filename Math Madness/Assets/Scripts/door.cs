@@ -64,7 +64,7 @@ public class Door : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         // Lock Door (only hallway)
-        if (!locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.E) && transform.parent.name.Contains("hallway door") && other.gameObject.GetComponent<PlayerInventory>().GetKey() != null)
+        if (!locked && other.gameObject.name == "PlayerCapsule" && (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) && transform.parent.name.Contains("hallway door") && other.gameObject.GetComponent<PlayerInventory>().GetKey() != null)
         {
             other.gameObject.GetComponent<PlayerInventory>().Remove(other.gameObject.GetComponent<PlayerInventory>().GetKey());
             source.Stop();
@@ -87,7 +87,7 @@ public class Door : MonoBehaviour
             
         }
         // Unlock Door (any locked door)
-        else if (locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.E) && other.gameObject.GetComponent<PlayerInventory>().GetKey() != null)
+        else if (locked && other.gameObject.name == "PlayerCapsule" && (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) && other.gameObject.GetComponent<PlayerInventory>().GetKey() != null)
         {
             other.gameObject.GetComponent<PlayerInventory>().Remove(other.gameObject.GetComponent<PlayerInventory>().GetKey());
             source.Stop();
