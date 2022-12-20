@@ -28,7 +28,9 @@ public class InventorySlot : MonoBehaviour {
     public void Use() {
         if (cur_consumable != null) {
             cur_consumable.Consume();
-            PlayerInventory.instance.Remove(cur_consumable);
+            if (cur_consumable.name != "Key") {
+                PlayerInventory.instance.Remove(cur_consumable);
+            }
         }
     }
 }

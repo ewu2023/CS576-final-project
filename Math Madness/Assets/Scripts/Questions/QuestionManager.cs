@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using StarterAssets;
 
 public class QuestionManager : MonoBehaviour {
     // Possible states player could be in
@@ -104,7 +105,7 @@ public class QuestionManager : MonoBehaviour {
                     cur_player_state = PlayerState.ANSWERING;
                     
                     // Disable player controls
-                    player.SetActive(false);
+                    player.GetComponent<FirstPersonController>().enabled = false;
 
                     Cursor.lockState = CursorLockMode.None;
 
@@ -142,10 +143,11 @@ public class QuestionManager : MonoBehaviour {
                     Destroy(book_to_destroy.gameObject);
                     
                     // Make player active again
-                    player.SetActive(true);
+                    player.GetComponent<FirstPersonController>().enabled = true;
                     Cursor.lockState = CursorLockMode.Locked;
                 } else {
                     try_again_text.gameObject.SetActive(true);
+                    player_input.text = "";
                 }
 
                 // Reset flag
