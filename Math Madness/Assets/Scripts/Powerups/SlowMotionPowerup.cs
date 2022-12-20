@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName="New Consumable", menuName="Inventory/SlowPowerup")]
 public class SlowMotionPowerup : Consumable {
@@ -10,7 +11,13 @@ public class SlowMotionPowerup : Consumable {
     private GameObject player;
 
     void OnEnable() {
-        player = GameObject.FindGameObjectWithTag("Player");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        if (scene.name == "level") {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
     }
 
     public override void Consume() {

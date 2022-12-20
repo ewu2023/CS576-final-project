@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using StarterAssets;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName="New Consumable", menuName="Inventory/SpeedPowerup")]
 public class SpeedPowerup : Consumable {
@@ -10,7 +11,13 @@ public class SpeedPowerup : Consumable {
 
     private GameObject player;
     void OnEnable() {
-        player = GameObject.FindGameObjectWithTag("Player");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        if (scene.name == "level") {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
     }
 
     public override void Consume() {
