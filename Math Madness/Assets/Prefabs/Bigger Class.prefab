@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 7270463786772940404}
   - component: {fileID: 7270463786772940402}
   - component: {fileID: 7270463786772940405}
+  - component: {fileID: 777548000858762184}
   m_Layer: 0
   m_Name: Door R
   m_TagString: Untagged
@@ -351,10 +352,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3fabec5bad84e459af9f8ae64cc0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  locked: 0
+  open: 0
   open_sound: {fileID: 8300000, guid: b29aadfce71901f44a1332a09f5189ff, type: 3}
   close_sound: {fileID: 8300000, guid: d5d1b305640c0254791afb087097426b, type: 3}
   locksound: {fileID: 8300000, guid: 9178df21bd0f4f1449f8a075da46a72d, type: 3}
-  locked: 0
+  enemy: {fileID: 0}
+  enemyScript: {fileID: 0}
 --- !u!82 &7270463786772940405
 AudioSource:
   m_ObjectHideFlags: 0
@@ -451,6 +455,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!208 &777548000858762184
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270463786772940406}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7270463786904070482
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +483,7 @@ GameObject:
   - component: {fileID: 7270463786904070481}
   - component: {fileID: 7270463786904070495}
   - component: {fileID: 7270463786904070494}
+  - component: {fileID: 964862952054900805}
   m_Layer: 0
   m_Name: Door R
   m_TagString: Untagged
@@ -511,10 +532,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3fabec5bad84e459af9f8ae64cc0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  locked: 0
+  open: 0
   open_sound: {fileID: 8300000, guid: b29aadfce71901f44a1332a09f5189ff, type: 3}
   close_sound: {fileID: 8300000, guid: d5d1b305640c0254791afb087097426b, type: 3}
   locksound: {fileID: 8300000, guid: 9178df21bd0f4f1449f8a075da46a72d, type: 3}
-  locked: 0
+  enemy: {fileID: 0}
+  enemyScript: {fileID: 0}
 --- !u!82 &7270463786904070494
 AudioSource:
   m_ObjectHideFlags: 0
@@ -611,6 +635,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!208 &964862952054900805
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270463786904070482}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7270463786948016115
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +963,7 @@ GameObject:
   - component: {fileID: 7270463787602047051}
   - component: {fileID: 7270463787602047049}
   - component: {fileID: 7270463787602047048}
+  - component: {fileID: 1439148214783144370}
   m_Layer: 0
   m_Name: Door L
   m_TagString: Untagged
@@ -971,10 +1012,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3fabec5bad84e459af9f8ae64cc0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  locked: 0
+  open: 0
   open_sound: {fileID: 8300000, guid: b29aadfce71901f44a1332a09f5189ff, type: 3}
   close_sound: {fileID: 8300000, guid: d5d1b305640c0254791afb087097426b, type: 3}
   locksound: {fileID: 8300000, guid: 9178df21bd0f4f1449f8a075da46a72d, type: 3}
-  locked: 0
+  enemy: {fileID: 0}
+  enemyScript: {fileID: 0}
 --- !u!82 &7270463787602047048
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1071,6 +1115,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!208 &1439148214783144370
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270463787602047052}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7270463787766508219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,6 +1240,7 @@ GameObject:
   - component: {fileID: 7270463788101066769}
   - component: {fileID: 7270463788101066783}
   - component: {fileID: 7270463788101066782}
+  - component: {fileID: 3172502906431580501}
   m_Layer: 0
   m_Name: Door L
   m_TagString: Untagged
@@ -1228,10 +1289,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3fabec5bad84e459af9f8ae64cc0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  locked: 0
+  open: 0
   open_sound: {fileID: 8300000, guid: b29aadfce71901f44a1332a09f5189ff, type: 3}
   close_sound: {fileID: 8300000, guid: d5d1b305640c0254791afb087097426b, type: 3}
   locksound: {fileID: 8300000, guid: 9178df21bd0f4f1449f8a075da46a72d, type: 3}
-  locked: 0
+  enemy: {fileID: 0}
+  enemyScript: {fileID: 0}
 --- !u!82 &7270463788101066782
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1328,6 +1392,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!208 &3172502906431580501
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270463788101066771}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7270463788220177894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,10 +1774,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3fabec5bad84e459af9f8ae64cc0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  locked: 0
+  open: 0
   open_sound: {fileID: 0}
   close_sound: {fileID: 0}
   locksound: {fileID: 0}
-  locked: 0
+  enemy: {fileID: 0}
+  enemyScript: {fileID: 0}
 --- !u!4 &7453115629613884607 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 255343323584920786, guid: 8f23a4a76d0c30643ba2031cda2e8cf0, type: 3}
@@ -1802,10 +1885,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3fabec5bad84e459af9f8ae64cc0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  locked: 0
+  open: 0
   open_sound: {fileID: 0}
   close_sound: {fileID: 0}
   locksound: {fileID: 0}
-  locked: 0
+  enemy: {fileID: 0}
+  enemyScript: {fileID: 0}
 --- !u!1001 &7270463787417835816
 PrefabInstance:
   m_ObjectHideFlags: 0

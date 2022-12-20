@@ -17,21 +17,29 @@ public class Door : MonoBehaviour
     public GameObject enemy;
     public EnemyAI enemyScript;
 
+    private UnityEngine.AI.NavMeshObstacle nav;
+
     // Start is called before the first frame update
     void Start()
     {
         open = false;
+        
+        nav = GetComponent<UnityEngine.AI.NavMeshObstacle>();
 
         enemy = GameObject.Find("Enemy");
         enemyScript = enemy.GetComponent<EnemyAI>();
 
         source = GetComponent<AudioSource>();
         locked = false;
+        nav.enabled = false;
         GameObject parent = transform.parent.gameObject;
         if (parent.name.Contains("Closet") || parent.name.Contains("Main Office"))
         {
             locked = true;
+            nav.enabled = true;
+
         }
+
     }
 
     // Update is called once per frame
@@ -48,7 +56,7 @@ public class Door : MonoBehaviour
             source.Stop();
             source.PlayOneShot(locksound);
         }
-        if (!locked && other.gameObject.name == "PlayerCapsule" || other.gameObject == enemy)
+        if (!locked && (other.gameObject.name == "PlayerCapsule" || other.gameObject == enemy))
         {
             source.Stop();
             source.PlayOneShot(open_sound);
@@ -70,6 +78,7 @@ public class Door : MonoBehaviour
             source.Stop();
             source.PlayOneShot(locksound);
             locked = true;
+            nav.enabled = true;
             Close();
             // Lock other hallway door
             if (name.Contains("Door L"))
@@ -93,6 +102,7 @@ public class Door : MonoBehaviour
             source.Stop();
             source.PlayOneShot(locksound);
             locked = false;
+            nav.enabled = false;
             Open();
             // Unlock other hallway door
             if (name.Contains("Door L"))
