@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    // GameObjects that can open door
+    // External Variables
+    public bool locked;
+    public bool open;
 
     // Sound
     public AudioClip open_sound;
     public AudioClip close_sound;
     public AudioClip locksound;
-    public bool locked;
     private AudioSource source;
 
     public GameObject enemy;
@@ -19,6 +20,8 @@ public class Door : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        open = false;
+
         enemy = GameObject.Find("Enemy");
         enemyScript = enemy.GetComponent<EnemyAI>();
 
@@ -49,15 +52,7 @@ public class Door : MonoBehaviour
         {
             source.Stop();
             source.PlayOneShot(open_sound);
-
-            if (name.Contains("Door L"))
-            {
-                transform.Rotate(0f, -90.0f, 0.0f, Space.World);
-            }
-            else if (name.Contains("Door R"))
-            {
-                transform.Rotate(0f, 90.0f, 0.0f, Space.World);
-            }
+            Open();
 
             if(other.gameObject.name == "PlayerCapsule")
             {
@@ -69,33 +64,48 @@ public class Door : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         // Lock Door (only hallway)
-        if (!locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.E) && transform.parent.name.Contains("hallway door"))
+        if (!locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.E) && transform.parent.name.Contains("hallway door") && other.gameObject.GetComponent<PlayerInventory>().GetKey() != null)
         {
+            other.gameObject.GetComponent<PlayerInventory>().Remove(other.gameObject.GetComponent<PlayerInventory>().GetKey());
             source.Stop();
             source.PlayOneShot(locksound);
             locked = true;
+            Close();
+            // Lock other hallway door
             if (name.Contains("Door L"))
             {
-                transform.Rotate(0f, 90.0f, 0.0f, Space.World);
+                GameObject otherdoor = transform.parent.Find("Door R").gameObject;
+                otherdoor.GetComponent<Door>().Close();
+                otherdoor.GetComponent<Door>().locked = true;
             }
             else if (name.Contains("Door R"))
             {
-                transform.Rotate(0f, -90.0f, 0.0f, Space.World);
+                GameObject otherdoor = transform.parent.Find("Door L").gameObject;
+                otherdoor.GetComponent<Door>().Close();
+                otherdoor.GetComponent<Door>().locked = true;
             }
+            
         }
         // Unlock Door (any locked door)
-        else if (locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.E))
+        else if (locked && other.gameObject.name == "PlayerCapsule" && Input.GetKeyDown(KeyCode.E) && other.gameObject.GetComponent<PlayerInventory>().GetKey() != null)
         {
+            other.gameObject.GetComponent<PlayerInventory>().Remove(other.gameObject.GetComponent<PlayerInventory>().GetKey());
             source.Stop();
             source.PlayOneShot(locksound);
             locked = false;
+            Open();
+            // Unlock other hallway door
             if (name.Contains("Door L"))
             {
-                transform.Rotate(0f, -90.0f, 0.0f, Space.World);
+                GameObject otherdoor = transform.parent.Find("Door R").gameObject;
+                otherdoor.GetComponent<Door>().Open();
+                otherdoor.GetComponent<Door>().locked = false;
             }
             else if (name.Contains("Door R"))
             {
-                transform.Rotate(0f, 90.0f, 0.0f, Space.World);
+                GameObject otherdoor = transform.parent.Find("Door L").gameObject;
+                otherdoor.GetComponent<Door>().Open();
+                otherdoor.GetComponent<Door>().locked = false;
             }
         }
     }
@@ -107,15 +117,35 @@ public class Door : MonoBehaviour
         {
             source.Stop();
             source.PlayOneShot(close_sound);
+            Close();
+        }
+    }
 
-            if (name.Contains("Door L"))
-            {
-                transform.Rotate(0f, 90.0f, 0.0f, Space.World);
-            }
-            else if (name.Contains("Door R"))
-            {
-                transform.Rotate(0f, -90.0f, 0.0f, Space.World);
-            }
+    public void Close()
+    {
+        if (open && name.Contains("Door L"))
+        {
+            transform.Rotate(0f, 90.0f, 0.0f, Space.World);
+            open = false;
+        }
+        else if (open && name.Contains("Door R"))
+        {
+            transform.Rotate(0f, -90.0f, 0.0f, Space.World);
+            open = false;
+        }
+    }
+
+    public void Open()
+    {
+        if (!open && name.Contains("Door L"))
+        {
+            transform.Rotate(0f, -90.0f, 0.0f, Space.World);
+            open = true;
+        }
+        else if (!open && name.Contains("Door R"))
+        {
+            transform.Rotate(0f, 90.0f, 0.0f, Space.World);
+            open = true;
         }
     }
 }
