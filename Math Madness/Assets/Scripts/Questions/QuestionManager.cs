@@ -9,11 +9,18 @@ public class QuestionManager : MonoBehaviour {
     private enum PlayerState {
         ROAMING,
         NEARBY,
-        ANSWERING
+        ANSWERING,
+        WIN
     }
 
     // Keep track of books in level
     public List<Book> books;
+
+    // Keep track of number of correct answers
+    private int num_correct_answers;
+
+    // Number of questions needed to win
+    public int total_needed;
 
     // Get reference to player
     public GameObject player;
@@ -58,6 +65,12 @@ public class QuestionManager : MonoBehaviour {
     void Update() {
        switch (cur_player_state) {
         case PlayerState.ROAMING:
+            // Check if player has won
+            if (HasWon()) {
+                cur_player_state = PlayerState.WIN;
+                break;
+            }
+
             // Check if there is a book nearby
             if (bookNearby()) {
                 cur_player_state = PlayerState.NEARBY;
@@ -136,6 +149,11 @@ public class QuestionManager : MonoBehaviour {
             }
 
             break;
+
+        case PlayerState.WIN:
+            Debug.Log("You Win!");
+            // End the game here
+            return;
         
         default:
             Debug.Log("Force state back to roaming");
@@ -173,6 +191,7 @@ public class QuestionManager : MonoBehaviour {
             Book book = books[cur_book];
             
             if (n == book.answer) {
+                num_correct_answers++;
                 return true;
             }
 
@@ -180,6 +199,10 @@ public class QuestionManager : MonoBehaviour {
         } catch (FormatException) {
             return false;
         }
+    }
+
+    bool HasWon() {
+        return num_correct_answers == total_needed;
     }
 
     // For debugging: switch states
