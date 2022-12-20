@@ -27330,6 +27330,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2432756135284480924, guid: 1d9f93807ce82a04785a9a8508a2376c, type: 3}
+      propertyPath: easyQuestions
+      value: 
+      objectReference: {fileID: 4900000, guid: dcbcbe56a5a5486468ede8853ddc4418, type: 3}
+    - target: {fileID: 2432756135284480924, guid: 1d9f93807ce82a04785a9a8508a2376c, type: 3}
+      propertyPath: hardQuestions
+      value: 
+      objectReference: {fileID: 4900000, guid: 35b4e38213d188347ad1d5832edb7e19, type: 3}
+    - target: {fileID: 2432756135284480924, guid: 1d9f93807ce82a04785a9a8508a2376c, type: 3}
+      propertyPath: mediumQuestions
+      value: 
+      objectReference: {fileID: 4900000, guid: 99c9223e35229a249bab3ebb584640d8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d9f93807ce82a04785a9a8508a2376c, type: 3}
 --- !u!1001 &6315785388511271745

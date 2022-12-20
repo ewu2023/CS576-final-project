@@ -8,6 +8,9 @@ public class BookSpawn : MonoBehaviour
     public float xradius;
     public float zradius;
 
+    public string question;
+    public int answer;
+
     private QuestionManager qm;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +24,10 @@ public class BookSpawn : MonoBehaviour
         {
             if (players[i].name == "PlayerCapsule")
             {
-                book_to_spawn.GetComponent<Book>().player_transform = players[i].transform;
+                Book book_script = book_to_spawn.GetComponent<Book>();
+                book_script.player_transform = players[i].transform;
+                book_script.question = question;
+                book_script.answer = answer;
             }
         }
 
