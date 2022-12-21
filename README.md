@@ -45,3 +45,38 @@ Final project for CS 576: Game programming
 **Asset References**
 - Smiley Face https://www.deviantart.com/boosman/art/Smile-texture-358144173
 - Terminator model and animations (X-bot from Mixamo https://www.mixamo.com/#/?page=1&query=x+bot&type=Character)
+- First Person Controller https://assetstore.unity.com/packages/essentials/starter-assets-first-person-character-controller-196525
+
+
+# Christopher Tran
+**Level Design and Doors**
+- Created the entire level design (rooms, hallways, lighting)
+- Furnished all rooms except in Main Office, Cafe, and Closets)
+- Door.cs (lines 7-15, 32-41, 51-63, 72-161)
+
+**Power Ups**
+- Visual and sound design for all power ups
+- Key item and doorlock programmed through Door.cs
+- ItemManager.cs
+- ItemSpawner.cs
+- ItemBehavior.cs
+
+**Book Spawner**
+- BookManager.cs
+- BookSpawn.cs
+
+**UI**
+- Created scenes for menu, win screen, lose screen
+- PlayButton.cs
+- MenuButton.cs
+
+**Asset References**
+- Office Furniture https://assetstore.unity.com/packages/3d/environments/urban/pixel-modern-office-extras-225670
+- Clock 3D Design https://assetstore.unity.com/packages/3d/props/interior/clock-4250
+- Speed Particle 3D Design https://assetstore.unity.com/packages/vfx/particles/powerup-particles-16458
+- Key 3D Design https://assetstore.unity.com/packages/3d/props/tools/simple-keys-231162
+- Power Down Sound https://pixabay.com/sound-effects/power-down-7103/
+- Electric Zap Sound https://pixabay.com/sound-effects/electric-zap-001-6374/
+- Get Key Sound https://pixabay.com/sound-effects/key-get-39925/
+- Lock Sound https://www.fesliyanstudios.com/royalty-free-sound-effects-download/door-lock-91
+- Door Sounds https://www.youtube.com/watch?v=-dZ_Zz9Ppjg&ab_channel=GamingSoundFX
