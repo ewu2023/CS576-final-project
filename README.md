@@ -37,7 +37,7 @@ Final project for CS 576: Game programming
 
 **Partially Edited**
 - Door.cs (lines 27-30, 65-68, 81, 105 so that the Terminator can interact with doors/not interact with locked doors)
-- Bookspawn.cs (lines 14, 35, 36, so that new spawned books can be added to a public list, so that the Terminator knows when to speed up when more books are picked up)
+- BookSpawn.cs (lines 14, 35, 36, so that new spawned books can be added to a public list, so that the Terminator knows when to speed up when more books are picked up)
 
 **Pause Menu** 
 - PauseMenu.cs (followed and modified from Brackey's tutorial on Pause Menus https://www.youtube.com/watch?v=JivuXdrIHK0)
