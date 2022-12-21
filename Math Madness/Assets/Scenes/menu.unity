@@ -492,10 +492,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Instructions:\n\t1. Use (WASD) to navigate the school to find all 6 books\n\t2.
-    Find and correctly answer all 6 books \n\t3. Avoid the Terminator and use (LShift)
-    to sprint\n\t4. Use powerups and items in the inventory with (1,2,3)\n\t5. Keys
-    can unlock any door and lock open hallway doors\n\t6. Pause any time eith (esc)
-    to quit or resume playing"
+    Find all 6 floating books and answer them correctly\n\t3. Avoid the Terminator
+    and use (LShift) to sprint\n\t4. Use powerups and items in the inventory with
+    (1,2,3)\n\t5. Keys can unlock any door and lock open hallway doors\n\t6. Pause
+    any time eith (esc) to quit or resume playing"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
