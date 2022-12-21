@@ -28,3 +28,20 @@ Final project for CS 576: Game programming
 - Key sprite: https://www.pixilart.com/art/key-sprite-test-99e4543b507dae7?ft=album&ft_id=147860
 - Lightning sprite: https://gamedeveloperstudio.itch.io/ui-icons
 - Inventory UI elements: https://devassets.com/assets/rpg-tutorial-assets/
+
+# Victor
+**Enemy AI and Obstacles** 
+- EnemyAI.cs
+- BullyAI.cs
+- Navmesh for rooms, navmesh obstacles on doors and some of the level design decor (most of it was Chris)
+
+**Partially Edited**
+- Door.cs (lines 27-30, 65-68, 81, 105 so that the Terminator can interact with doors/not interact with locked doors)
+- Bookspawn.cs (lines 14, 35, 36, so that new spawned books can be added to a public list, so that the Terminator knows when to speed up when more books are picked up)
+
+**Pause Menu** 
+- PauseMenu.cs (followed and modified from Brackey's tutorial on Pause Menus https://www.youtube.com/watch?v=JivuXdrIHK0)
+
+**Asset References**
+- Smiley Face https://www.deviantart.com/boosman/art/Smile-texture-358144173
+- Terminator model and animations (X-bot from Mixamo https://www.mixamo.com/#/?page=1&query=x+bot&type=Character)
