@@ -335,7 +335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -153}
+  m_AnchoredPosition: {x: 0, y: -161.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365445765
@@ -493,9 +493,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Instructions:\n\t1. Use (WASD) to navigate the school to find all 6 books\n\t2.
     Find and correctly answer all 6 books \n\t3. Avoid the Terminator and use (LShift)
-    to sprint\n\t4. Open inventory with (i) and mouse click to use powerups\n\t5.
-    Use obtained keys with (e) to unlock doors\n\t\tYou can also lock any hallway
-    doors that you open!"
+    to sprint\n\t4. Use powerups and items in the inventory with (1,2,3)\n\t5. Keys
+    can unlock any door and lock open hallway doors\n\t6. Pause any time eith (esc)
+    to quit or resume playing"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
