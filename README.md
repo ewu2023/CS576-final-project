@@ -1,8 +1,9 @@
 # CS576-final-project
 Final project for CS 576: Game programming
+Contributors: Eric Wu, Victor Lee, Christopher Tran
 
 ### Contributions
-# Eric
+# Eric Wu
 **Inventory System Code** (inspired by Brackeys' tutorial on Inventory Systems: https://www.youtube.com/watch?v=YLhj7SfaxSE)
 - Consumable.cs (From tutorial)
 - InventorySlot.cs (Own work: Lines 9-13, 40-46)
@@ -29,7 +30,7 @@ Final project for CS 576: Game programming
 - Lightning sprite: https://gamedeveloperstudio.itch.io/ui-icons
 - Inventory UI elements: https://devassets.com/assets/rpg-tutorial-assets/
 
-# Victor
+# Victor Lee
 **Enemy AI and Obstacles** 
 - EnemyAI.cs
 - BullyAI.cs
